@@ -87,6 +87,24 @@ module.exports = (plop) => {
               templateFile: 'template/molecule.stories.tsx.hbs',
             },
           ];
+        case 'organism':
+          return [
+            {
+              type: 'add',
+              path: path + '{{pascalCase name}}/index.tsx',
+              templateFile: 'template/organism.tsx.hbs',
+            },
+            {
+              type: 'add',
+              path: path + '{{pascalCase name}}/{{pascalCase name}}.test.tsx',
+              templateFile: 'template/organism.test.tsx.hbs',
+            },
+            {
+              type: 'add',
+              path: path + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+              templateFile: 'template/organism.stories.tsx.hbs',
+            },
+          ];
         default:
           return [];
       }
