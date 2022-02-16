@@ -29,32 +29,6 @@ module.exports = (plop) => {
     actions: (data) => {
       const path = `../src/component/${data.atomic}/${data.dirname}/`;
 
-      /**
-       * atomic
-       *   index.tsx
-       *   {{pascalCase name}}.stories.tsx
-       */
-      /**
-       * molecule / organism
-       *   index.tsx <= presenter を返す
-       *   {{pascalCase name}}.tsx
-       *   {{pascalCase name}}.stories.tsx
-       *   {{pascalCase name}}.test.tsx
-       */
-
-      /**
-       * template
-       *   index.tsx <= container で返す
-       *   {{pascalCase name}}Presenter.tsx
-       *   {{pascalCase name}}Presenter.stories.tsx
-       *   {{pascalCase name}}Presenter.test.tsx
-       */
-
-      /**
-       * page
-       *   {{kabebCase name}}/index.tsx
-       *   {{kabebCase name}}/index.test.tsx
-       */
       switch (data.atomic) {
         case 'atom':
           return [
@@ -103,6 +77,19 @@ module.exports = (plop) => {
               type: 'add',
               path: path + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
               templateFile: 'template/organism.stories.tsx.hbs',
+            },
+          ];
+        case 'page':
+          return [
+            {
+              type: 'add',
+              path: '../src/pages/{{kebabCase name}}.tsx',
+              templateFile: 'template/page.tsx.hbs',
+            },
+            {
+              type: 'add',
+              path: '../src/__test__/unit/page/{{pascalCase name}}.test.tsx',
+              templateFile: 'template/page.test.tsx.hbs',
             },
           ];
         default:

@@ -1,0 +1,15 @@
+import { render, RenderResult } from '@testing-library/react';
+import { {{pascalCase name}}, {{pascalCase name}}Props, defaultProps, baseId } from '@/pages/{{kebabCase name}}';
+
+let res: RenderResult;
+let props: {{pascalCase name}}Props;
+
+describe('{{atomic}}s/{{pascalCase name}}', () => {
+  describe('default', () => {
+    beforeEach(() => {
+      res = render(<{{pascalCase name}} {...defaultProps} />);
+    });
+
+    it.todo('{{atomic}}s/{{pascalCase name}} のテストケースを書くこと');
+  });
+});
