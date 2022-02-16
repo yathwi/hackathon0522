@@ -34,6 +34,22 @@ npm run test
 
 ## Tips
 
+### バージョン情報
+
+主なパッケージのバージョンは以下の通りです。
+
+- TypeScript：4.5.4
+- React：17.0.38
+- Next.js：12.0.10
+- Tailwind CSS：3.0.16
+- ESLint：8.6.0
+- Prettier：2.5.1
+- Storybook：6.4.14
+- Plop：3.0.5
+- Jest：27.4.7
+- React Testing Library：12.1.2
+
+
 ### デプロイ
 
 現状では Vercel と接続すると良いでしょう。アップロード先の GitHub リポジトリを選択すれば問題なくデプロイできるはずです。
