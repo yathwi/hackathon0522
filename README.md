@@ -42,6 +42,8 @@ npm run test
 - React：17.0.38
 - Next.js：12.0.10
 - Tailwind CSS：3.0.16
+- React Hook Form：7.27.0
+- Zod：3.11.6
 - ESLint：8.6.0
 - Prettier：2.5.1
 - Storybook：6.4.14
@@ -49,6 +51,9 @@ npm run test
 - Jest：27.4.7
 - React Testing Library：12.1.2
 
+### Form
+
+Form 関連は React Hook Form をメインで利用しています。React Hook Form を利用することでコーディング量を減らすことができるだけでなく、レンダリングを効率的に行うことができます。React Hook Form 自体でバリデーションを行えますが、Zod もしくは Yup のようなバリデーション専用のライブラリと連携させることもでき Zod を利用します。
 
 ### デプロイ
 
