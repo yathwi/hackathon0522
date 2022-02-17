@@ -157,9 +157,9 @@ kikagaku-next-starter-kit
 │   │   └── [ComponentName]
 │   │        ├── index.tsx                    # Container Component
 │   │        ├── [ComponentName].tsx          # Presentational Component
-│   │        ├── [ComponentName].type.ts      # Presentation Component Prop Types
+│   │        ├── [ComponentName].type.ts      # Presentational Component's Prop Types
 │   │        ├── [ComponentName].props.ts     # Presentational props for Test & Storybook
-│   │        ├── [ComponentName].test.tsx     # Test for Presentation Component
+│   │        ├── [ComponentName].test.tsx     # Test for Presentational Component
 │   │        └── [ComponentName].stories.tsx  # Storybook
 ├── pages
 │   ├── _app.tsx
