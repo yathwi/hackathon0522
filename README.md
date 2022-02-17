@@ -112,8 +112,8 @@ kikagaku-next-starter-kit
 ├── next.config.js
 ├── next-env.d.ts
 # Tailwind CSS
-├── postcss.config.js
 ├── tailwind.config.js
+├── postcss.config.js
 # Jest
 ├── jest.config.js
 ├── jest.setup.js
@@ -135,24 +135,33 @@ kikagaku-next-starter-kit
 ├── component
 │   ├── atom
 │   │   └── [ComponentName]
-│   │        ├── index.tsx
-│   │        └──  [ComponentName].stories.tsx
+│   │        ├── index.tsx                    # barrel
+│   │        ├── [ComponentName].tsx          # Component
+│   │        └── [ComponentName].stories.tsx  # Storybook
 │   ├── molecule
 │   │   └── [ComponentName]
-│   │        ├── index.tsx  # Component, ComponentProps, storyObj を集約
-│   │        ├── [ComponentName].test.tsx
-│   │        └── [ComponentName].stories.tsx
+│   │        ├── index.tsx                    # barrel
+│   │        ├── [ComponentName].tsx          # Component
+│   │        ├── [ComponentName].type.ts      # Prop Types
+│   │        ├── [ComponentName].props.ts     # props for Test & Storybook
+│   │        ├── [ComponentName].test.tsx     # Test
+│   │        └── [ComponentName].stories.tsx  # Storybook
 │   ├── organism
 │   │   └── [ComponentName]
-│   │        ├── index.tsx
-│   │        ├── [ComponentName].test.tsx
-│   │        └── [ComponentName].stories.tsx
+│   │        ├── index.tsx                    # barrel
+│   │        ├── [ComponentName].tsx          # Component
+│   │        ├── [ComponentName].type.ts      # Prop Types
+│   │        ├── [ComponentName].props.ts     # props for Test & Storybook
+│   │        ├── [ComponentName].test.tsx     # Test
+│   │        └── [ComponentName].stories.tsx  # Storybook
 │   └── template
-│       └── [ComponentName]
-│            ├── index.tsx
-│            ├── [componentName].hooks.ts
-│            ├── [ComponentName].test.tsx
-│            └── [ComponentName].stories.tsx
+│   │   └── [ComponentName]
+│   │        ├── index.tsx                    # Container Component
+│   │        ├── [ComponentName].tsx          # Presentational Component
+│   │        ├── [ComponentName].type.ts      # Presentation Component Prop Types
+│   │        ├── [ComponentName].props.ts     # Presentational props for Test & Storybook
+│   │        ├── [ComponentName].test.tsx     # Test for Presentation Component
+│   │        └── [ComponentName].stories.tsx  # Storybook
 ├── pages
 │   ├── _app.tsx
 │   └── index.tsx
