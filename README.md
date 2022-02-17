@@ -117,7 +117,6 @@ kikagaku-next-starter-kit
 # Jest
 ├── jest.config.js
 ├── jest.setup.js
-├── __mocks__
 # PLOP
 ├── generator
 # プロジェクトの設定
