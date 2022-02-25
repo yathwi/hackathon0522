@@ -38,18 +38,18 @@ npm run test
 
 主なパッケージのバージョンは以下の通りです。
 
-- TypeScript：4.5.4
-- React：17.0.38
-- Next.js：12.0.10
-- Tailwind CSS：3.0.16
-- React Hook Form：7.27.0
-- Zod：3.11.6
-- ESLint：8.6.0
+- TypeScript：4.5.5
+- React：17.0.39
+- Next.js：12.1.0
+- Tailwind CSS：3.0.23
+- React Hook Form：7.27.1
+- Zod：3.12.0
+- ESLint：8.9.0
 - Prettier：2.5.1
 - Storybook：6.4.14
 - Plop：3.0.5
-- Jest：27.4.7
-- React Testing Library：12.1.2
+- Jest：27.5.1
+- React Testing Library：12.1.3
 
 ### Form
 
