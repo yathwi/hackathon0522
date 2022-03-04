@@ -1,8 +1,9 @@
 import { {{pascalCase name}} as {{pascalCase name}}Presenter } from './{{pascalCase name}}';
 import { {{pascalCase name}}Props } from './{{pascalCase name}}.type';
 
-const defaultProps: {{pascalCase name}}Props = {};
+const {{pascalCase name}}: React.FC = () => {
+  const defaultProps: {{pascalCase name}}Props = {};
+  return <{{pascalCase name}}Presenter {...defaultProps} />;
+};
 
-const {{pascalCase name}}: React.FC = () => <{{pascalCase name}}Presenter {...defaultProps} />;
-
-export { {{pascalCase name}} }
+export { {{pascalCase name}} };
