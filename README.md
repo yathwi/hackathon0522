@@ -5,21 +5,28 @@
 Git から Clone 後に必要なパッケージのインストールを行います。
 
 ```bash
-npm install
+yarn install
 ```
+
+2022/03/15 現在 storybook の依存パッケージの部分で問題が起きており、
+npm 　経由でインストールを行うと「X 件の高い脆弱性が発見されました（found X high severity vulnerabilities）」と警告がでます。
+yarn ではこの問題を自動的に解消してくれるため **yarn での起動**を推奨しています。
 
 ### サーバーの立ち上げ
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 [http://localhost:3000](http://localhost:3000) にブラウザでアクセスすれば OK です。
 
 ### Storybook の立ち上げ
 
+まず始めに src フォルダ直下に component フォルダを作成しましょう（src/component）。
+作成後以下のコマンドを叩きます。
+
 ```bash
-npm run sb
+yarn sb
 ```
 
 これで Storybook が [http://localhost:6006](http://localhost:6006) で立ち上がります。
@@ -29,7 +36,7 @@ npm run sb
 Jest でのテストは以下の通りです。
 
 ```bash
-npm run test
+yarn test
 ```
 
 ## Tips
@@ -72,7 +79,7 @@ GitHub Actions での CI/CD が標準で設定されています。`main` ブラ
 [PLOP](https://plopjs.com/) を使って Atomic デザインのコンポーネント開発に必要な雛形が自動的に生成できるように設定してあります。以下のコマンドで対話的にコンポーネントの雛形が作成できるため試してみましょう。
 
 ```bash
-npm run generate
+yarn generate
 ```
 
 PLOP の設定は `generator` ディレクトリを確認してください。
@@ -123,7 +130,7 @@ kikagaku-next-starter-kit
 ├── README.md
 ├── node_modules
 ├── package.json
-├── package-lock.json
+├── yarn.lock
 └── tsconfig.json
 ```
 
