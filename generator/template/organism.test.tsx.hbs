@@ -12,7 +12,7 @@ describe('component/{{atomic}}/{{pascalCase name}}', () => {
     });
 
     it('component/{{atomic}}/{{pascalCase name}} のテストケースを書くこと', () => {
-      const view = render(<{{pascalCase name}} {...props} />);
+      render(<{{pascalCase name}} {...props} />);
       expect(screen.getByTestId(baseId)).toBeInTheDocument();
 
     });
