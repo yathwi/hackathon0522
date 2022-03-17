@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { {{pascalCase name}}, baseId } from './{{pascalCase name}}';
-import { {{camelCase name}}Props } from './{{pascalCase name}}.props';
+import { propObj } from './{{pascalCase name}}.props';
 import { {{pascalCase name}}Props } from './{{pascalCase name}}.type';
 
 let props: {{pascalCase name}}Props;
@@ -8,12 +8,12 @@ let props: {{pascalCase name}}Props;
 describe('component/{{atomic}}/{{pascalCase name}}', () => {
   describe('default', () => {
     beforeEach(() => {
-      props = {{camelCase name}}Props.default;
+      props = propObj.default;
     });
 
     it('component/{{atomic}}/{{pascalCase name}} のテストケースを書くこと', () => {
       const view = render(<{{pascalCase name}} {...props} />);
-      expect(true).toBe(true);
+      expect(screen.getByTestId(baseId)).toBeInTheDocument();
     });
   });
 });
