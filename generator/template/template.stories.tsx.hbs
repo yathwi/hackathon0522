@@ -1,6 +1,6 @@
 import { ComponentMeta, Story } from '@storybook/react';
 import { {{pascalCase name}} } from './{{pascalCase name}}';
-import { {{camelCase name}}Props } from './{{pascalCase name}}.props';
+import { propObj } from './{{pascalCase name}}.props';
 import { {{pascalCase name}}Props } from './{{pascalCase name}}.type';
 
 export default {
@@ -11,4 +11,4 @@ export default {
 const Template: Story<{{pascalCase name}}Props> = (args) => <{{pascalCase name}} {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {{camelCase name}}Props.default;
+Default.args = propObj.default;
