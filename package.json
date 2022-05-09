@@ -9,7 +9,7 @@
     "lint": "next lint --dir src",
     "test": "jest",
     "test:dev": "jest --watch",
-    "sb": "start-storybook -p 6006 -s public",
+    "sb": "start-storybook -p 6006 -h localhost",
     "build-storybook": "build-storybook -s public",
     "generate": "plop --plopfile ./generator/plopfile.js"
   },
