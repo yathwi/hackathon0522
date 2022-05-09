@@ -1,6 +1,6 @@
-## Getting Started
+# Getting Started
 
-### パッケージのインストール
+## パッケージのインストール
 
 Git から Clone 後に必要なパッケージのインストールを行います。
 
@@ -10,7 +10,7 @@ yarn install
 
 > 2022/03/15 現在 storybook の依存パッケージの部分で問題が起きています。npm 経由でインストールを行うと「X 件の高い脆弱性が発見されました（found X high severity vulnerabilities）」と警告がでます。yarn ではこの問題を自動的に解消してくれるため **yarn の利用**を推奨しています。
 
-### サーバーの立ち上げ
+## サーバーの立ち上げ
 
 ```bash
 yarn dev
@@ -18,7 +18,7 @@ yarn dev
 
 [http://localhost:3000](http://localhost:3000) にブラウザでアクセスすれば OK です。
 
-### Storybook の立ち上げ
+## Storybook の立ち上げ
 
 まず始めに src フォルダ直下に component フォルダを作成しましょう（src/component）。作成後以下のコマンドを叩きます。
 
@@ -28,7 +28,7 @@ yarn sb
 
 これで Storybook が [http://localhost:6006](http://localhost:6006) で立ち上がります。
 
-### テスト
+## テスト
 
 Jest でのテストは以下の通りです。
 
@@ -42,18 +42,18 @@ yarn test
 
 主なパッケージのバージョンは以下の通りです。
 
-- TypeScript：4.5.5
-- React：17.0.39
-- Next.js：12.1.0
-- Tailwind CSS：3.0.23
-- React Hook Form：7.27.1
-- Zod：3.12.0
-- ESLint：8.9.0
-- Prettier：2.5.1
-- Storybook：6.4.14
-- Plop：3.0.5
-- Jest：27.5.1
-- React Testing Library：12.1.3
+- TypeScript：4.6.4
+- React：18.1.0
+- Next.js：12.1.6
+- Tailwind CSS：3.0.24
+- React Hook Form：7.30.0
+- Zod：3.15.1
+- ESLint：8.15.0
+- Prettier：2.6.2
+- Storybook：6.4.22
+- Plop：3.1.0
+- Jest：28.1.0
+- React Testing Library：13.2.0
 
 ### Form
 
@@ -95,14 +95,10 @@ Atomic デザインを基本としてコンポーネントを設計していき�
   - コンポーネントの実装は行わず Tailwind CSS の `@apply` などで決められる範囲内が目安
 - Molecule (Presentational Component)
   - 複数の Atom をまとめて使いやすくする程度
-- Organism (Presentational Component)
-  - SSR / CSR でデータ挿入前の最大の単位
-- Template (Container Component)
-  - Client Sider Rendering (CSR) でデータ挿入
-- Page (Container Component)
-  - SSR でデータ挿入
+- Project (Container & Presentational Component)
+  - プロダクト固有のコンポーネント（ Organism or Template )。
 
-Presentational Component としての実装の最大は Organism として、小：中：大＝ Atom：Molecule：Organism 考えると楽かと思います。Organism に const を含んだ CSR でデータ挿入を行えば Template になり、SSR でデータ挿入を行う場合には Page で管理するイメージです。
+Presentational Component としての実装の最大は Project として、小：中：大＝ Atom：Molecule：Project と考えると楽かと思います。
 
 ### ディレクトリ構造
 
