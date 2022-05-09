@@ -9,8 +9,7 @@ module.exports = (plop) => {
         choices: [
           { name: 'atom', value: 'atom' },
           { name: 'molecule', value: 'molecule' },
-          { name: 'organism', value: 'organism' },
-          { name: 'template', value: 'template' },
+          { name: 'project', value: 'project' },
           { name: 'page', value: 'page' },
         ],
       },
@@ -22,6 +21,7 @@ module.exports = (plop) => {
     ],
     actions: (data) => {
       const path = `../src/component/${data.atomic}/`;
+      const projectPath = `../src/component/${process.env.npm_package_name}/`;
 
       switch (data.atomic) {
         case 'atom':
@@ -75,70 +75,37 @@ module.exports = (plop) => {
               templateFile: 'template/molecule.stories.tsx.hbs',
             },
           ];
-        case 'organism':
+        case 'project':
           return [
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/index.ts',
-              templateFile: 'template/organism.index.ts.hbs',
+              path: projectPath + '{{pascalCase name}}/index.tsx',
+              templateFile: 'template/project.index.tsx.hbs',
             },
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.tsx',
-              templateFile: 'template/organism.component.tsx.hbs',
+              path: projectPath + '{{pascalCase name}}/{{pascalCase name}}.tsx',
+              templateFile: 'template/project.component.tsx.hbs',
             },
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.type.ts',
-              templateFile: 'template/organism.type.ts.hbs',
+              path: projectPath + '{{pascalCase name}}/{{pascalCase name}}.type.ts',
+              templateFile: 'template/project.type.ts.hbs',
             },
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.props.ts',
-              templateFile: 'template/organism.props.ts.hbs',
+              path: projectPath + '{{pascalCase name}}/{{pascalCase name}}.props.ts',
+              templateFile: 'template/project.props.ts.hbs',
             },
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-              templateFile: 'template/organism.test.tsx.hbs',
+              path: projectPath + '{{pascalCase name}}/{{pascalCase name}}.test.tsx',
+              templateFile: 'template/project.test.tsx.hbs',
             },
             {
               type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-              templateFile: 'template/organism.stories.tsx.hbs',
-            },
-          ];
-        case 'template':
-          return [
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/index.tsx',
-              templateFile: 'template/template.index.tsx.hbs',
-            },
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.tsx',
-              templateFile: 'template/template.component.tsx.hbs',
-            },
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.type.ts',
-              templateFile: 'template/template.type.ts.hbs',
-            },
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.props.ts',
-              templateFile: 'template/template.props.ts.hbs',
-            },
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-              templateFile: 'template/template.test.tsx.hbs',
-            },
-            {
-              type: 'add',
-              path: path + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-              templateFile: 'template/template.stories.tsx.hbs',
+              path: projectPath + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+              templateFile: 'template/project.stories.tsx.hbs',
             },
           ];
         case 'page':
