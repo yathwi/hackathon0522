@@ -3,6 +3,12 @@ module.exports = (plop) => {
     description: 'Create a component',
     prompts: [
       {
+        type: 'input',
+        name: 'projectName',
+        message:
+          'What is the project name? => src/component/{projectName}/{dirname}/{name}  ※ atom・molecule・page を作る場合は入力不要です。Enter で進んでください。',
+      },
+      {
         type: 'list',
         name: 'atomic',
         message: 'Choose atomic?',
@@ -21,7 +27,9 @@ module.exports = (plop) => {
     ],
     actions: (data) => {
       const path = `../src/component/${data.atomic}/`;
-      const projectPath = `../src/component/${process.env.npm_package_name}/`;
+      let projectName = data.projectName.toLowerCase();
+      if (!data.projectName) projectName = 'project';
+      const projectPath = `../src/component/${projectName}/`;
 
       switch (data.atomic) {
         case 'atom':
