@@ -46,6 +46,11 @@ module.exports = (plop) => {
             },
             {
               type: 'add',
+              path: path + '{{pascalCase name}}/{{pascalCase name}}.type.ts',
+              templateFile: 'template/atom.type.ts.hbs',
+            },
+            {
+              type: 'add',
               path: path + '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
               templateFile: 'template/atom.stories.tsx.hbs',
             },
