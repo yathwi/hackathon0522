@@ -1,1 +1,2 @@
-export const {{pascalCase name}}: React.FC = ({ children }) => <>{children}</>;
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.type';
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({ children }) => <>{children}</>;
