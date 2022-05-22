@@ -3,7 +3,7 @@ import { Button } from './Button';
 import Image from 'next/image';
 
 export const Cta: FC = () => (
-  <section className='flex py-[2rem] px-[1rem] flex-col min-h-[500px] items-center justify-center bg-[#ffb472] bg-gradient-to-r from-[#ffb472]' >
+  <section className='flex py-[2rem] px-[1rem] flex-col min-h-[500px] items-center justify-center bg-primary-100' >
     <div className='flex flex-col items-center'>
       <Image src='/img/next_restaurant.png' width={626} height={344} alt='restaurant' />
       <h2 className='text-[2rem] text-center font-bold my-[2rem]'>

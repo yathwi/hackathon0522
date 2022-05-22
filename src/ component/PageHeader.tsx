@@ -38,14 +38,10 @@ export const PageHeader: React.FC = () => {
   
 
   return (
-    <div className='flex items-center justify-between  border-b border-gray-100 bg-[#ffffff]'>
+    <div className='flex items-center justify-between sticky top-0 z-10  border-b border-gray-100 bg-[#ffffff]'>
       <div className='flex items-center px-9'>
-        <span className='text-primary-900 text-[2rem] font-cursive'>Root4you</span>
-        <Link href='/noteIndex'>
-          <a className='hover:opacity-50'>
-            <Image src='/img/umakoko.png' alt='logo' width={100} height={100} />
-          </a>
-        </Link>
+        <span className='text-primary-900 text-[2rem] cursive'>Root4you</span>
+
         <nav>
           <ul className='ml-24 hidden gap-6 md:flex '>
             {menu.map((item, index) => (

@@ -6,7 +6,7 @@ export const Flow: React.FC = () => {
   const StepText = [{
     title:'Step1',
     subtitle:'利用申込',
-    description:'ページ上部の「利用申込」をクリック。お店の基本情報や従業員のプロフィールなどを入力して送信します。'
+    description:'「資料ダウンロード」をクリック。お店の基本情報や従業員のプロフィールなどを入力して送信します。'
   },
   {
     title:'Step2',

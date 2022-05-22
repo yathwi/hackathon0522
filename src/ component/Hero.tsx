@@ -18,10 +18,10 @@ export const Hero: React.FC = () => (
       </span>
       </h2>
       <div className='relative mx-auto w-[80%] mt-6'>
-        <div className='flex mr-auto w-fit ml-6'>
+        <div className='flex mx-auto items-center w-fit ml-6'>
           <Check/><li className = 'list-none text-gray-900 font-bold'>優秀な人材が定着しない</li>
         </div>
-        <div className='flex mr-auto w-fit ml-6'>
+        <div className='flex mr-auto items-center w-fit ml-6'>
           <Check/><li className='list-none text-gray-900 font-bold'>リピーターが増えない</li>
         </div>
         <div className='text-center mt-6'>

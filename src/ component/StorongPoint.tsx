@@ -10,24 +10,24 @@ const Items: parts[] = [
   {
     title: 'スタッフの働く意欲向上',
     src: '/img/motivation.png',
-    alt: 'whrere',
+    alt: 'motivation',
     content:
       '従業員は自分のサービスレベルが金銭に直結するので、モチベーションの向上に繋がります。',
   },
   {
     title: 'リピーターの増加',
     src: '/img/repeater.png',
-    alt: 'purpose',
+    alt: "repeater",
     content:
       '食事やサービスだけでなく、「人」に対してファンがつくことで新しいリピーターを見込めます。',
    
   },
   {
     title: '店舗の利用手数料は0円',
-    src: '/img/submit.png',
-    alt: 'plan',
+    src: '/img/margin.png',
+    alt: 'margin',
     content:
-      '導入にあたって店舗側に金銭的負担は一切ありません。',
+      '導入にあたって店舗側に金銭的負担は一切ありません。お申し込みから最短○日後からご利用いただけます。',
   },
 
 ];

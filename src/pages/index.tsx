@@ -13,7 +13,7 @@ const Home: React.FC = () => (
     <Head>
       <title>Root4you</title>
     </Head>
-    <div> 
+      <div className="sticy top-0 z-20">
       <PageHeader />
       <Hero />
       <About />
