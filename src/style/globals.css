@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-brown {
+  @apply rounded-lg
+ bg-[#ff3d44ba] bg-gradient-to-r from-[#B0484B] px-[3rem] py-[1rem] font-bold text-white hover:opacity-70;
+}
+
+.btn-orange {
+  @apply rounded-lg
+  bg-yellow-50 bg-gradient-to-r from-orange px-[3rem] py-[1rem] font-bold text-white hover:opacity-70;
+}
+
+.highlight {
+  @apply w-max border-b-2 border-yellow-700;
+}

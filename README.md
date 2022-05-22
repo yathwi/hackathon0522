@@ -10,7 +10,7 @@ yarn install
 
 > 2022/03/15 現在 storybook の依存パッケージの部分で問題が起きています。npm 経由でインストールを行うと「X 件の高い脆弱性が発見されました（found X high severity vulnerabilities）」と警告がでます。yarn ではこの問題を自動的に解消してくれるため **yarn の利用**を推奨しています。
 
-## サーバーの立ち上げ
+## サーバーの立ち上
 
 ```bash
 yarn dev

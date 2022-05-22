@@ -1,9 +1,30 @@
+import Head from "next/head";
+import { PageHeader } from "@/ component/PageHeader";
+import { PageFooter } from "@/ component/PageFooter";
+import { Hero } from "@/ component/Hero";
+import { StrongPoint } from "@/ component/StorongPoint";
+import { Cta } from "@/ component/Cta";
+import { Flow } from "@/ component/Flow";
+import { About } from "@/ component/About";
+
 const Home: React.FC = () => (
-  <main className='mx-auto max-w-6xl py-6'>
-    <h1 className='text-lg font-bold text-primary-800'>
-      Welcome to Kikagaku Next.js Starter Kit!!
-    </h1>
-  </main>
+ 
+  <>
+    <Head>
+      <title>Root4you</title>
+    </Head>
+    <div> 
+      <PageHeader />
+      <Hero />
+      <About />
+      <StrongPoint />
+      <Flow/>
+      <Cta />
+      <PageFooter />
+    </div>
+  
+  </>
+
 );
 
 export default Home;
