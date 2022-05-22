@@ -6,7 +6,7 @@ export const Flow: React.FC = () => {
   const StepText = [{
     title:'Step1',
     subtitle:'利用申込',
-    description:'「資料ダウンロード」をクリック。お店の基本情報や従業員のプロフィールなどを入力して送信します。'
+    description:'「利用申込」をクリック。お店の基本情報や従業員のプロフィールなどを入力して送信します。'
   },
   {
     title:'Step2',
@@ -19,7 +19,7 @@ export const Flow: React.FC = () => {
   },{
     title:'Step4',
     subtitle:'お振込',
-    description:'従業員への振り込みは月に1回。最低振込額1000円から対応可能です。'
+    description:'従業員への振り込みは月に1回。最低振込額1,000円から対応可能です。'
   },
 ];
 

@@ -16,3 +16,4 @@ export const Button: React.FC<ButtonProps> = ({ text, style, color, disable = fa
     {text}
   </button>
 );
+

@@ -5,8 +5,8 @@ export const About: React.FC = () =>(
     <div className=" max-w-[95%] mx-auto " >
     <Image src="/img/light1.png" width={30} height={30} alt="light" />
       <h2 className=" text-lg font-bold">良いサービスに投げ銭を</h2>
-      <div className=" text-gray-900 mt-5">
-        <p>Root4youではお客様から「投げ銭」を受け取ることで、従業員の労働環境改善やお店の新しい価値を生み出すことを支援いたします。</p>
+      <div className="px-2 text-gray-900 mt-5">
+        <p>Root4youではお客様から応援の気持ちとして「投げ銭」を受け取ることで、従業員の労働環境改善やお店の新しい価値を生み出すことを支援いたします。</p>
       </div>
    </div>
   </div>

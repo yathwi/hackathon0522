@@ -14,7 +14,7 @@ export const Cta: FC = () => (
         target={'_blank'}
         rel='noreferrer'
       >
-        <Button text={'資料ダウンロード'} color={'brown'} />
+        <Button text={'利用申込'} color={'brown'} />
       </a>
     </div>
   </section>
