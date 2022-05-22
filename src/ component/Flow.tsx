@@ -41,9 +41,13 @@ export const Flow: React.FC = () => {
             <p className ='text-base py-4 px-6'>
               {item.description}
             </p>
-            <div className={`'text-center my-2'${index == 3 ? 'hidden' : ''}`}>
-              <Image src='/img/Polygon 3.png' alt='hero' width={40} height={18} />
-            </div>
+            {
+              index === StepText.length-1 ? null :
+                <div className='text-center my-2'>
+                <Image src='/img/Polygon 3.png' alt='hero' width={40} height={18} />
+              </div>
+            }
+          
           </div>
           ))
         }

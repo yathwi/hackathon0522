@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from './Button';
-import { Image } from './Image';
+import Image from 'next/image';
 
 export const Cta: FC = () => (
   <section className='flex py-[2rem] px-[1rem] flex-col min-h-[500px] items-center justify-center bg-[#ffb472] bg-gradient-to-r from-[#ffb472]' >
