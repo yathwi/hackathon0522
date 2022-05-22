@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { PageHeader } from "@/ component/PageHeader";
-import { PageFooter } from "@/ component/PageFooter";
 import { Hero } from "@/ component/Hero";
-import { StrongPoint } from "@/ component/StorongPoint";
-import { Cta } from "@/ component/Cta";
-import { Flow } from "@/ component/Flow";
 import { About } from "@/ component/About";
+import { StrongPoint } from "@/ component/StorongPoint";
+import { Flow } from "@/ component/Flow";
+import { Cta } from "@/ component/Cta";
+import { PageFooter } from "@/ component/PageFooter";
 
 const Home: React.FC = () => (
  
